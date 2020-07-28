@@ -51,6 +51,7 @@
 		AEEE4CBC24D040D700AF2DC2 /* CoreDataProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEE4CC024D040D700AF2DC2 /* CoreDataProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectUITests.swift; sourceTree = "<group>"; };
 		AEEE4CC224D040D700AF2DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEEE4CCE24D0410E00AF2DC2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		AEEE4C8F24D040D200AF2DC2 = {
 			isa = PBXGroup;
 			children = (
+				AEEE4CCE24D0410E00AF2DC2 /* README.md */,
 				AEEE4C9A24D040D200AF2DC2 /* CoreDataProject */,
 				AEEE4CB424D040D700AF2DC2 /* CoreDataProjectTests */,
 				AEEE4CBF24D040D700AF2DC2 /* CoreDataProjectUITests */,
