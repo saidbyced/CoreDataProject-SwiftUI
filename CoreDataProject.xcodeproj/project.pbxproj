@@ -14,8 +14,6 @@
 		AEEE4CA524D040D700AF2DC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEEE4CA424D040D700AF2DC2 /* Assets.xcassets */; };
 		AEEE4CA824D040D700AF2DC2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEEE4CA724D040D700AF2DC2 /* Preview Assets.xcassets */; };
 		AEEE4CAB24D040D700AF2DC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEEE4CA924D040D700AF2DC2 /* LaunchScreen.storyboard */; };
-		AEEE4CB624D040D700AF2DC2 /* CoreDataProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEE4CB524D040D700AF2DC2 /* CoreDataProjectTests.swift */; };
-		AEEE4CC124D040D700AF2DC2 /* CoreDataProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEE4CC024D040D700AF2DC2 /* CoreDataProjectUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +44,7 @@
 		AEEE4CAA24D040D700AF2DC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEEE4CAC24D040D700AF2DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEEE4CB124D040D700AF2DC2 /* CoreDataProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEEE4CB524D040D700AF2DC2 /* CoreDataProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectTests.swift; sourceTree = "<group>"; };
-		AEEE4CB724D040D700AF2DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEEE4CBC24D040D700AF2DC2 /* CoreDataProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEEE4CC024D040D700AF2DC2 /* CoreDataProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectUITests.swift; sourceTree = "<group>"; };
-		AEEE4CC224D040D700AF2DC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEEE4CCE24D0410E00AF2DC2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,8 +78,6 @@
 			children = (
 				AEEE4CCE24D0410E00AF2DC2 /* README.md */,
 				AEEE4C9A24D040D200AF2DC2 /* CoreDataProject */,
-				AEEE4CB424D040D700AF2DC2 /* CoreDataProjectTests */,
-				AEEE4CBF24D040D700AF2DC2 /* CoreDataProjectUITests */,
 				AEEE4C9924D040D200AF2DC2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,13 +95,11 @@
 		AEEE4C9A24D040D200AF2DC2 /* CoreDataProject */ = {
 			isa = PBXGroup;
 			children = (
-				AEEE4C9B24D040D200AF2DC2 /* AppDelegate.swift */,
-				AEEE4C9D24D040D200AF2DC2 /* SceneDelegate.swift */,
-				AEEE4CA224D040D200AF2DC2 /* ContentView.swift */,
+				AEEE4CCF24D0417F00AF2DC2 /* Controllers */,
+				AEEE4CD024D0418E00AF2DC2 /* Views */,
+				AEEE4CD124D041A700AF2DC2 /* Models */,
 				AEEE4CA424D040D700AF2DC2 /* Assets.xcassets */,
-				AEEE4CA924D040D700AF2DC2 /* LaunchScreen.storyboard */,
 				AEEE4CAC24D040D700AF2DC2 /* Info.plist */,
-				AEEE4C9F24D040D200AF2DC2 /* CoreDataProject.xcdatamodeld */,
 				AEEE4CA624D040D700AF2DC2 /* Preview Content */,
 			);
 			path = CoreDataProject;
@@ -123,22 +113,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AEEE4CB424D040D700AF2DC2 /* CoreDataProjectTests */ = {
+		AEEE4CCF24D0417F00AF2DC2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AEEE4CB524D040D700AF2DC2 /* CoreDataProjectTests.swift */,
-				AEEE4CB724D040D700AF2DC2 /* Info.plist */,
+				AEEE4C9B24D040D200AF2DC2 /* AppDelegate.swift */,
+				AEEE4C9D24D040D200AF2DC2 /* SceneDelegate.swift */,
 			);
-			path = CoreDataProjectTests;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
-		AEEE4CBF24D040D700AF2DC2 /* CoreDataProjectUITests */ = {
+		AEEE4CD024D0418E00AF2DC2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AEEE4CC024D040D700AF2DC2 /* CoreDataProjectUITests.swift */,
-				AEEE4CC224D040D700AF2DC2 /* Info.plist */,
+				AEEE4CA224D040D200AF2DC2 /* ContentView.swift */,
+				AEEE4CA924D040D700AF2DC2 /* LaunchScreen.storyboard */,
 			);
-			path = CoreDataProjectUITests;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEEE4CD124D041A700AF2DC2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AEEE4C9F24D040D200AF2DC2 /* CoreDataProject.xcdatamodeld */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +281,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEEE4CB624D040D700AF2DC2 /* CoreDataProjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +288,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEEE4CC124D040D700AF2DC2 /* CoreDataProjectUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
