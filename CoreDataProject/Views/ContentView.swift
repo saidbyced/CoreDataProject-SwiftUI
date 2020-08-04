@@ -15,9 +15,7 @@ struct ContentView: View {
   
   var body: some View {
     VStack {
-      if lastNameFilter != "" {
-        FilteredListView(filter: lastNameFilter)
-      }
+      FilteredListView(filter: lastNameFilter)
       Button("Add Examples", action: {
         let taylor = Singer(context: self.moc)
         taylor.firstName = "Taylor"

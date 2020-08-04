@@ -9,11 +9,15 @@
 import SwiftUI
 
 struct FilteredListView: View {
-  var fetchRequest: FetchRequest<Singer>
-  
   init(filter: String) {
-    fetchRequest = FetchRequest<Singer>(entity: Singer.entity(), sortDescriptors: [], predicate: NSPredicate(format: "lastName BEGINSWITH %@", filter))
+    if filter == "" {
+      fetchRequest = FetchRequest<Singer>(entity: Singer.entity(), sortDescriptors: [])
+    } else {
+      fetchRequest = FetchRequest<Singer>(entity: Singer.entity(), sortDescriptors: [], predicate: NSPredicate(format: "lastName BEGINSWITH %@", filter))
+    }
   }
+  
+  var fetchRequest: FetchRequest<Singer>
   
   var body: some View {
     List(fetchRequest.wrappedValue, id: \.self) { singer in
